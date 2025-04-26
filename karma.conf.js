@@ -1,4 +1,4 @@
-export default function (config) {
+module.exports = function (config) {
   config.set({
     basePath: "",
     frameworks: ["jasmine", "@angular-devkit/build-angular"],
@@ -44,4 +44,4 @@ export default function (config) {
     singleRun: true,
     restartOnFileChange: true,
   });
-}
+};
