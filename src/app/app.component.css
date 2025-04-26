@@ -1,0 +1,11 @@
+.custom-footer {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
+
+.header-title {
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #999;
+}
