@@ -5,6 +5,11 @@
   font-size: 0.9rem;
 }
 
+.footer-text {
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #999;
+}
+
 .header-title {
   font-weight: bold;
   text-shadow: 1px 1px 1px #999;
