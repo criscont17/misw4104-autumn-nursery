@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 import { environment } from '../../../environments/environment.development';
+import { NurseryDetail } from '../models/nursery';
 import { Plant } from '../models/plant';
 
 @Injectable({
@@ -13,7 +14,7 @@ export class PlantService {
 
   constructor(private _http: HttpClient) {}
 
-  getPlants(): Observable<any> {
+  getPlants(): Observable<NurseryDetail> {
     return this._http.get<Plant[]>(this._endpointUrl).pipe(
       map((plants) => {
         let indoorPlant = 0;
