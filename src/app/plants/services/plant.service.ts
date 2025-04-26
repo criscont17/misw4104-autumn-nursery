@@ -12,10 +12,10 @@ import { Plant } from '../models/plant';
 export class PlantService {
   private _endpointUrl = `${environment.apiUrl}/cf1077fa69112bc67ff520dd6517a93afd3dae29/202212_MISW4104_Grupo2.json`;
 
-  constructor(private _http: HttpClient) {}
+  constructor(private http: HttpClient) {}
 
-  getPlants(): Observable<NurseryDetail> {
-    return this._http.get<Plant[]>(this._endpointUrl).pipe(
+  fetchNurseryDetail$(): Observable<NurseryDetail> {
+    return this.http.get<Plant[]>(this._endpointUrl).pipe(
       map((plants) => {
         let indoorPlant = 0;
         let outdoorPlant = 0;
